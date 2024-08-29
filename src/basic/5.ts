@@ -9,11 +9,8 @@ enum DayOfWeek {
 }
 
 
-const isWeekend = (status: DayOfWeek): void => {
-  if (status === DayOfWeek.Sunday || status === DayOfWeek.Saturday) {
-    console.log('It is a weekend')
-  }
-  console.log('It is a working day')
+const isWeekend = (status: DayOfWeek): boolean => {
+  return status === DayOfWeek.Saturday || status === DayOfWeek.Sunday;
 }
 
 isWeekend(DayOfWeek.Sunday)
